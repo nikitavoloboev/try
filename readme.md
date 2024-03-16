@@ -2,7 +2,7 @@
 
 > Code, forks, learning
 
-I keep all clones in `~/clones` and forks in `~/forks` (workflow needs to be improved with good Alfred extension).
+I keep all clones in `~/clones` and forks in `~/forks`. All code I work with is in [~/src](https://github.com/nikitavoloboev#src).
 
 This `~/try` folder is for code I am trying out that's not suitable for other repos + a reference of clones/forks I am working with.
 
