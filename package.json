@@ -1,0 +1,14 @@
+{
+  "name": "try",
+  "scripts": {},
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "prettier": {
+    "semi": false
+  }
+}

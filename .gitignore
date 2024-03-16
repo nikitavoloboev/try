@@ -1,0 +1,7 @@
+private
+.DS_Store
+.env
+target
+
+# ignore sub git folders
+solana/sol-pay
