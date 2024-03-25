@@ -27,7 +27,8 @@ module.exports = {
     // React
     {
       files: ["**/*.{js,jsx,ts,tsx}"],
-      plugins: ["react", "jsx-a11y"],
+      // TODO: turned off jsx-a11y, it came with remix starter, check it
+      plugins: ["react"],
       extends: [
         "plugin:react/recommended",
         "plugin:react/jsx-runtime",
@@ -80,4 +81,4 @@ module.exports = {
       },
     },
   ],
-};
+}
