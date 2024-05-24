@@ -1,20 +1,20 @@
-import React from "react";
+import React from "react"
 import {
-  Action as QuickAction,
-  initial as INITIAL_QUICK_ACTION,
-  addListener,
-} from "expo-quick-actions";
+	Action as QuickAction,
+	initial as INITIAL_QUICK_ACTION,
+	addListener,
+} from "expo-quick-actions"
 
-let _initialAction: QuickAction | undefined = INITIAL_QUICK_ACTION;
+let _initialAction: QuickAction | undefined = INITIAL_QUICK_ACTION
 
 function popInitialAction() {
-  if (!_initialAction) {
-    return;
-  }
+	if (!_initialAction) {
+		return
+	}
 
-  let result = _initialAction;
-  _initialAction = undefined;
-  return result;
+	let result = _initialAction
+	_initialAction = undefined
+	return result
 }
 
 /**
@@ -26,25 +26,25 @@ function popInitialAction() {
  * Will be instantly called with the initial action if it exists.
  */
 export function useQuickActionCallback(
-  callback: (data: QuickAction) => void | Promise<void>,
+	callback: (data: QuickAction) => void | Promise<void>,
 ) {
-  React.useEffect(() => {
-    let isMounted = true;
+	React.useEffect(() => {
+		let isMounted = true
 
-    // Only call the initial action once
-    let initialAction = popInitialAction();
-    if (initialAction) {
-      callback(initialAction);
-    }
+		// Only call the initial action once
+		let initialAction = popInitialAction()
+		if (initialAction) {
+			callback(initialAction)
+		}
 
-    const sub = addListener((event) => {
-      if (isMounted) {
-        callback(event);
-      }
-    });
-    return () => {
-      isMounted = false;
-      sub.remove();
-    };
-  }, [callback]);
+		const sub = addListener((event) => {
+			if (isMounted) {
+				callback(event)
+			}
+		})
+		return () => {
+			isMounted = false
+			sub.remove()
+		}
+	}, [callback])
 }

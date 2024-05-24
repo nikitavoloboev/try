@@ -1,19 +1,19 @@
-import { useEffect } from "react";
-import { AppState, AppStateStatus } from "react-native";
+import { useEffect } from "react"
+import { AppState, AppStateStatus } from "react-native"
 
 export function useAppStateEffect(callback: (state: AppStateStatus) => void) {
-  useEffect(() => {
-    function onChange(newState: AppStateStatus) {
-      callback(newState);
-    }
+	useEffect(() => {
+		function onChange(newState: AppStateStatus) {
+			callback(newState)
+		}
 
-    const subscription = AppState.addEventListener("change", onChange);
+		const subscription = AppState.addEventListener("change", onChange)
 
-    // Fire initial state
-    onChange(AppState.currentState);
+		// Fire initial state
+		onChange(AppState.currentState)
 
-    return () => {
-      subscription.remove();
-    };
-  }, [callback]);
+		return () => {
+			subscription.remove()
+		}
+	}, [callback])
 }
