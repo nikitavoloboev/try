@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		086D764B4DF343BA921088C5 /* 1-Icon-60x60@3x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F2C12D0CFF4C339850FE39 /* 1-Icon-60x60@3x~ipad.png */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1CE6DD84CC974F30A4BF14A5 /* 0-Icon-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DA1B33D9FF4B36804E543D /* 0-Icon-60x60@2x.png */; };
+		1FE85A374BF5415DA037360F /* FreightSansProBlack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E58F95086FCD4D128C8D3A31 /* FreightSansProBlack-Regular.ttf */; };
+		2631B9760F7C47CDB7950017 /* 0-Icon-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B380A31BD74B10A0A7D5B2 /* 0-Icon-60x60@3x.png */; };
+		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		3FB741BFF6B242369F98466F /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3792CB7A4446E88DC084FD /* noop-file.swift */; };
+		3FE90E7E26ED451B8C19B976 /* 1-Icon-60x60@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 658B5AFFF6B9426A938C8B80 /* 1-Icon-60x60@2x~ipad.png */; };
+		430DF3AE82DF4689AAD65A0F /* 0-Icon-60x60@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C81714A2C644084A64A5D10 /* 0-Icon-60x60@2x~ipad.png */; };
+		44533E69454A492493838BB5 /* FreightSansProBlack-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC16AB6D6BF240C9BB89120C /* FreightSansProBlack-Italic.ttf */; };
+		4FAF3910030C41D59264DC11 /* FreightSansProLight-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24E8A89766224978AE311902 /* FreightSansProLight-Italic.ttf */; };
+		56C655086FA84421AFDF3A6B /* FreightSansProBold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE959B4B81E242CEB9943323 /* FreightSansProBold-Italic.ttf */; };
+		625C439380A044BAB8D7DD86 /* FreightSansProSemibold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB1A4D23E12A45F9A03AB735 /* FreightSansProSemibold-Italic.ttf */; };
+		75B8C56838284A5D90DD85DC /* 1-Icon-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A23616CD3E5417AAACD49AF /* 1-Icon-60x60@2x.png */; };
+		836243BDA4834E14A199EDD8 /* FreightSansProBold-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF09A236E34543EA91A969FD /* FreightSansProBold-Regular.ttf */; };
+		8629296B698044F0B33EA2A3 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A658D3014DC4F92A47CF35E /* BootSplash.storyboard */; };
+		96905EF65AED1B983A6B3ABC /* libPods-KusKus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-KusKus.a */; };
+		A58E522BDF58418BA7D48860 /* FreightSansProMedium-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FA76F1532E4410E8A1991E4 /* FreightSansProMedium-Italic.ttf */; };
+		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
+		B36559E4176E4A77BF8209F5 /* 0-Icon-60x60@3x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 004074EAD10F44EEA5720C30 /* 0-Icon-60x60@3x~ipad.png */; };
+		B8A03CFA478640E193FE390B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE7FA54FBCE47808C3BACF4 /* Colors.xcassets */; };
+		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		CB522FB255CF436AA6EAC1E1 /* FreightSansProSemibold-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDD22C29C3554FADB12A9D64 /* FreightSansProSemibold-Regular.ttf */; };
+		DB51C49D139E4F8EAC793048 /* FreightSansProMedium-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7B90ABFE1D744AFB6F6273B /* FreightSansProMedium-Regular.ttf */; };
+		DE8412F332984C3CB171DA77 /* 1-Icon-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 638D51220CBA4D7FBE5E28B0 /* 1-Icon-60x60@3x.png */; };
+		EB921091B42444E9814518B9 /* FreightSansProBook-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4EAB5AFCFA341DB826409F0 /* FreightSansProBook-Italic.ttf */; };
+		F790C630BE404A14A918AB88 /* FreightSansProLight-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 927C67E996D748799B6FA554 /* FreightSansProLight-Regular.ttf */; };
+		F86261A64E0E409EB7CF8047 /* FreightSansProBook-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 020DF6EBEDD942E59F8E9987 /* FreightSansProBook-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		004074EAD10F44EEA5720C30 /* 0-Icon-60x60@3x~ipad.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "0-Icon-60x60@3x~ipad.png"; path = "KusKus/DynamicAppIcons/0-Icon-60x60@3x~ipad.png"; sourceTree = "<group>"; };
+		020DF6EBEDD942E59F8E9987 /* FreightSansProBook-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FreightSansProBook-Regular.ttf"; path = "../assets/fonts/FreightSansProBook-Regular.ttf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* KusKus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KusKus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KusKus/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = KusKus/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = KusKus/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = KusKus/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KusKus/main.m; sourceTree = "<group>"; };
+		1FA76F1532E4410E8A1991E4 /* FreightSansProMedium-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FreightSansProMedium-Italic.ttf"; path = "../assets/fonts/FreightSansProMedium-Italic.ttf"; sourceTree = "<group>"; };
+		24E8A89766224978AE311902 /* FreightSansProLight-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FreightSansProLight-Italic.ttf"; path = "../assets/fonts/FreightSansProLight-Italic.ttf"; sourceTree = "<group>"; };
+		25A68194CE1F467BBF52B720 /* KusKus-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "KusKus-Bridging-Header.h"; path = "KusKus/KusKus-Bridging-Header.h"; sourceTree = "<group>"; };
+		2EE7FA54FBCE47808C3BACF4 /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = KusKus/Colors.xcassets; sourceTree = "<group>"; };
+		50F2C12D0CFF4C339850FE39 /* 1-Icon-60x60@3x~ipad.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "1-Icon-60x60@3x~ipad.png"; path = "KusKus/DynamicAppIcons/1-Icon-60x60@3x~ipad.png"; sourceTree = "<group>"; };
+		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-KusKus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KusKus.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		638D51220CBA4D7FBE5E28B0 /* 1-Icon-60x60@3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "1-Icon-60x60@3x.png"; path = "KusKus/DynamicAppIcons/1-Icon-60x60@3x.png"; sourceTree = "<group>"; };
+		658B5AFFF6B9426A938C8B80 /* 1-Icon-60x60@2x~ipad.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "1-Icon-60x60@2x~ipad.png"; path = "KusKus/DynamicAppIcons/1-Icon-60x60@2x~ipad.png"; sourceTree = "<group>"; };
+		6C2E3173556A471DD304B334 /* Pods-KusKus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KusKus.debug.xcconfig"; path = "Target Support Files/Pods-KusKus/Pods-KusKus.debug.xcconfig"; sourceTree = "<group>"; };
+		6C81714A2C644084A64A5D10 /* 0-Icon-60x60@2x~ipad.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "0-Icon-60x60@2x~ipad.png"; path = "KusKus/DynamicAppIcons/0-Icon-60x60@2x~ipad.png"; sourceTree = "<group>"; };
+		7A4D352CD337FB3A3BF06240 /* Pods-KusKus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KusKus.release.xcconfig"; path = "Target Support Files/Pods-KusKus/Pods-KusKus.release.xcconfig"; sourceTree = "<group>"; };
+		7A658D3014DC4F92A47CF35E /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = BootSplash.storyboard; path = KusKus/BootSplash.storyboard; sourceTree = "<group>"; };
+		8A23616CD3E5417AAACD49AF /* 1-Icon-60x60@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "1-Icon-60x60@2x.png"; path = "KusKus/DynamicAppIcons/1-Icon-60x60@2x.png"; sourceTree = "<group>"; };
+		927C67E996D748799B6FA554 /* FreightSansProLight-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FreightSansProLight-Regular.ttf"; path = "../assets/fonts/FreightSansProLight-Regular.ttf"; sourceTree = "<group>"; };
+		A5B380A31BD74B10A0A7D5B2 /* 0-Icon-60x60@3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "0-Icon-60x60@3x.png"; path = "KusKus/DynamicAppIcons/0-Icon-60x60@3x.png"; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = KusKus/SplashScreen.storyboard; sourceTree = "<group>"; };
+		B7B90ABFE1D744AFB6F6273B /* FreightSansProMedium-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FreightSansProMedium-Regular.ttf"; path = "../assets/fonts/FreightSansProMedium-Regular.ttf"; sourceTree = "<group>"; };
+		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		BC16AB6D6BF240C9BB89120C /* FreightSansProBlack-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FreightSansProBlack-Italic.ttf"; path = "../assets/fonts/FreightSansProBlack-Italic.ttf"; sourceTree = "<group>"; };
+		C2DA1B33D9FF4B36804E543D /* 0-Icon-60x60@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "0-Icon-60x60@2x.png"; path = "KusKus/DynamicAppIcons/0-Icon-60x60@2x.png"; sourceTree = "<group>"; };
+		CDD22C29C3554FADB12A9D64 /* FreightSansProSemibold-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FreightSansProSemibold-Regular.ttf"; path = "../assets/fonts/FreightSansProSemibold-Regular.ttf"; sourceTree = "<group>"; };
+		DB1A4D23E12A45F9A03AB735 /* FreightSansProSemibold-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FreightSansProSemibold-Italic.ttf"; path = "../assets/fonts/FreightSansProSemibold-Italic.ttf"; sourceTree = "<group>"; };
+		DE959B4B81E242CEB9943323 /* FreightSansProBold-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FreightSansProBold-Italic.ttf"; path = "../assets/fonts/FreightSansProBold-Italic.ttf"; sourceTree = "<group>"; };
+		DF09A236E34543EA91A969FD /* FreightSansProBold-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FreightSansProBold-Regular.ttf"; path = "../assets/fonts/FreightSansProBold-Regular.ttf"; sourceTree = "<group>"; };
+		E4EAB5AFCFA341DB826409F0 /* FreightSansProBook-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FreightSansProBook-Italic.ttf"; path = "../assets/fonts/FreightSansProBook-Italic.ttf"; sourceTree = "<group>"; };
+		E58F95086FCD4D128C8D3A31 /* FreightSansProBlack-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FreightSansProBlack-Regular.ttf"; path = "../assets/fonts/FreightSansProBlack-Regular.ttf"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-KusKus/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		FE3792CB7A4446E88DC084FD /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "KusKus/noop-file.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96905EF65AED1B983A6B3ABC /* libPods-KusKus.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B07FAE1A68108700A75B9A /* KusKus */ = {
+			isa = PBXGroup;
+			children = (
+				BB2F792B24A3F905000567C9 /* Supporting */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
+				FE3792CB7A4446E88DC084FD /* noop-file.swift */,
+				25A68194CE1F467BBF52B720 /* KusKus-Bridging-Header.h */,
+				7A658D3014DC4F92A47CF35E /* BootSplash.storyboard */,
+				2EE7FA54FBCE47808C3BACF4 /* Colors.xcassets */,
+				A3D4D40FDEE24D158E4C9713 /* DynamicAppIcons */,
+			);
+			name = KusKus;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				58EEBF8E8E6FB1BC6CAF49B5 /* libPods-KusKus.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EE91CE0C734450784C427F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC16AB6D6BF240C9BB89120C /* FreightSansProBlack-Italic.ttf */,
+				E58F95086FCD4D128C8D3A31 /* FreightSansProBlack-Regular.ttf */,
+				DE959B4B81E242CEB9943323 /* FreightSansProBold-Italic.ttf */,
+				DF09A236E34543EA91A969FD /* FreightSansProBold-Regular.ttf */,
+				E4EAB5AFCFA341DB826409F0 /* FreightSansProBook-Italic.ttf */,
+				020DF6EBEDD942E59F8E9987 /* FreightSansProBook-Regular.ttf */,
+				24E8A89766224978AE311902 /* FreightSansProLight-Italic.ttf */,
+				927C67E996D748799B6FA554 /* FreightSansProLight-Regular.ttf */,
+				1FA76F1532E4410E8A1991E4 /* FreightSansProMedium-Italic.ttf */,
+				B7B90ABFE1D744AFB6F6273B /* FreightSansProMedium-Regular.ttf */,
+				DB1A4D23E12A45F9A03AB735 /* FreightSansProSemibold-Italic.ttf */,
+				CDD22C29C3554FADB12A9D64 /* FreightSansProSemibold-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* KusKus */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				D65327D7A22EEC0BE12398D9 /* Pods */,
+				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
+				7EE91CE0C734450784C427F5 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* KusKus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92DBD88DE9BF7D494EA9DA96 /* KusKus */ = {
+			isa = PBXGroup;
+			children = (
+				FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */,
+			);
+			name = KusKus;
+			sourceTree = "<group>";
+		};
+		A3D4D40FDEE24D158E4C9713 /* DynamicAppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				C2DA1B33D9FF4B36804E543D /* 0-Icon-60x60@2x.png */,
+				A5B380A31BD74B10A0A7D5B2 /* 0-Icon-60x60@3x.png */,
+				6C81714A2C644084A64A5D10 /* 0-Icon-60x60@2x~ipad.png */,
+				004074EAD10F44EEA5720C30 /* 0-Icon-60x60@3x~ipad.png */,
+				8A23616CD3E5417AAACD49AF /* 1-Icon-60x60@2x.png */,
+				638D51220CBA4D7FBE5E28B0 /* 1-Icon-60x60@3x.png */,
+				658B5AFFF6B9426A938C8B80 /* 1-Icon-60x60@2x~ipad.png */,
+				50F2C12D0CFF4C339850FE39 /* 1-Icon-60x60@3x~ipad.png */,
+			);
+			name = DynamicAppIcons;
+			path = "";
+			sourceTree = "<group>";
+		};
+		BB2F792B24A3F905000567C9 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				BB2F792C24A3F905000567C9 /* Expo.plist */,
+			);
+			name = Supporting;
+			path = KusKus/Supporting;
+			sourceTree = "<group>";
+		};
+		D65327D7A22EEC0BE12398D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C2E3173556A471DD304B334 /* Pods-KusKus.debug.xcconfig */,
+				7A4D352CD337FB3A3BF06240 /* Pods-KusKus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				92DBD88DE9BF7D494EA9DA96 /* KusKus */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* KusKus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KusKus" */;
+			buildPhases = (
+				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
+				07A382864109CCEB90314DDF /* [Expo] Configure project */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
+				9FDB6CA7C81191B91DA997C9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KusKus;
+			productName = KusKus;
+			productReference = 13B07F961A680F5B00A75B9A /* KusKus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "KusKus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* KusKus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+				8629296B698044F0B33EA2A3 /* BootSplash.storyboard in Resources */,
+				B8A03CFA478640E193FE390B /* Colors.xcassets in Resources */,
+				44533E69454A492493838BB5 /* FreightSansProBlack-Italic.ttf in Resources */,
+				1FE85A374BF5415DA037360F /* FreightSansProBlack-Regular.ttf in Resources */,
+				56C655086FA84421AFDF3A6B /* FreightSansProBold-Italic.ttf in Resources */,
+				836243BDA4834E14A199EDD8 /* FreightSansProBold-Regular.ttf in Resources */,
+				EB921091B42444E9814518B9 /* FreightSansProBook-Italic.ttf in Resources */,
+				F86261A64E0E409EB7CF8047 /* FreightSansProBook-Regular.ttf in Resources */,
+				4FAF3910030C41D59264DC11 /* FreightSansProLight-Italic.ttf in Resources */,
+				F790C630BE404A14A918AB88 /* FreightSansProLight-Regular.ttf in Resources */,
+				A58E522BDF58418BA7D48860 /* FreightSansProMedium-Italic.ttf in Resources */,
+				DB51C49D139E4F8EAC793048 /* FreightSansProMedium-Regular.ttf in Resources */,
+				625C439380A044BAB8D7DD86 /* FreightSansProSemibold-Italic.ttf in Resources */,
+				CB522FB255CF436AA6EAC1E1 /* FreightSansProSemibold-Regular.ttf in Resources */,
+				1CE6DD84CC974F30A4BF14A5 /* 0-Icon-60x60@2x.png in Resources */,
+				2631B9760F7C47CDB7950017 /* 0-Icon-60x60@3x.png in Resources */,
+				430DF3AE82DF4689AAD65A0F /* 0-Icon-60x60@2x~ipad.png in Resources */,
+				B36559E4176E4A77BF8209F5 /* 0-Icon-60x60@3x~ipad.png in Resources */,
+				75B8C56838284A5D90DD85DC /* 1-Icon-60x60@2x.png in Resources */,
+				DE8412F332984C3CB171DA77 /* 1-Icon-60x60@3x.png in Resources */,
+				3FE90E7E26ED451B8C19B976 /* 1-Icon-60x60@2x~ipad.png in Resources */,
+				086D764B4DF343BA921088C5 /* 1-Icon-60x60@3x~ipad.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		07A382864109CCEB90314DDF /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-KusKus/expo-configure-project.sh\"\n";
+		};
+		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KusKus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KusKus/Pods-KusKus-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXApplication/ExpoApplication_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXNotifications/ExpoNotifications_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXUpdates/EXUpdates.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoDevice/ExpoDevice_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoSystemUI/ExpoSystemUI_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNCAsyncStorage/RNCAsyncStorage_resources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ReachabilitySwift/ReachabilitySwift.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/RCTI18nStrings.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/expo-dev-launcher/EXDevLauncher.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/expo-dev-menu/EXDevMenu.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/LottiePrivacyInfo.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/lottie-react-native/Lottie_React_Native_Privacy.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoApplication_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoConstants_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoNotifications_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXUpdates.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoDevice_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoSystemUI_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RNCAsyncStorage_resources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ReachabilitySwift.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCTI18nStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SDWebImage.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXDevLauncher.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXDevMenu.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LottiePrivacyInfo.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Lottie_React_Native_Privacy.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KusKus/Pods-KusKus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FDB6CA7C81191B91DA997C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KusKus/Pods-KusKus-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KusKus/Pods-KusKus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
+				3FB741BFF6B242369F98466F /* noop-file.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2E3173556A471DD304B334 /* Pods-KusKus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = KusKus/KusKus.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = KusKus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = app.test.app;
+				PRODUCT_NAME = KusKus;
+				SWIFT_OBJC_BRIDGING_HEADER = "KusKus/KusKus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4D352CD337FB3A3BF06240 /* Pods-KusKus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = KusKus/KusKus.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = KusKus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = app.test.app;
+				PRODUCT_NAME = KusKus;
+				SWIFT_OBJC_BRIDGING_HEADER = "KusKus/KusKus-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CXX = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CXX = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "KusKus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "KusKus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

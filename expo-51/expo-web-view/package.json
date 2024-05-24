@@ -1,0 +1,48 @@
+{
+  "name": "expo-web-view",
+  "version": "0.1.0",
+  "description": "My new module",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module",
+    "open:ios": "xed example/ios",
+    "open:android": "open -a \"Android Studio\" example/android",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "expo-web-view",
+    "ExpoWebView"
+  ],
+  "repository": "https://github.com/nikitavoloboev/expo-web-view",
+  "bugs": {
+    "url": "https://github.com/nikitavoloboev/expo-web-view/issues"
+  },
+  "author": "Nikita <nikita.voloboev@gmail.com> (https://github.com/nikitavoloboev)",
+  "license": "MIT",
+  "homepage": "https://github.com/nikitavoloboev/expo-web-view#readme",
+  "dependencies": {
+    "expo": "~51.0.8",
+    "react": "18.2.0",
+    "react-native": "0.74.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "expo-module-scripts": "^3.5.1",
+    "expo-modules-core": "^1.12.9"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  }
+}

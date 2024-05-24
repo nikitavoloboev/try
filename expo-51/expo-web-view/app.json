@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "expo-web-view",
+    "slug": "expo-web-view",
+    "version": "0.1.0",
+    "description": "My new module",
+    "sdkVersion": "51.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.nikitavoloboev.expo-web-view"
+    }
+  }
+}
