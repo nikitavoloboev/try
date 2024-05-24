@@ -1,0 +1,9 @@
+{
+	"platforms": ["ios", "tvos", "android", "web"],
+	"ios": {
+		"modules": ["NativeModule"]
+	},
+	"android": {
+		"modules": ["expo.modules.nativemodule.NativeModule"]
+	}
+}
