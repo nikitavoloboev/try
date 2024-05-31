@@ -1,1 +1,1 @@
-# vite-ts-react-tailwind
+Doing app from [Jazz docs](https://jazz.tools/docs).
