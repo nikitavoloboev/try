@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	/* height: 100%; */
+	background-color: #0F0F0F;
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #545454;
+		border-radius: 10px;
+
+
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #fff;
+	}
+}
+
+.flex-grow::-webkit-scrollbar {
+	display: none;
+}
+
+.settings-icon {
+	transition: transform 1000ms ease;
+}
+
+.settings-icon:hover {
+	transform: rotate(360deg);
+}
+.tiptap p.is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: "Write something ....";
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

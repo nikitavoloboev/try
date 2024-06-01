@@ -6,3 +6,7 @@ export class Issue extends CoMap {
 	estimate = co.number
 	status? = co.literal("backlog", "in progress", "done")
 }
+
+// export class Issues extends CoMap {
+// 	issues = co.list(Issue)
+// }
