@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query"
 
 export default function App() {
-	const { isPending, error } = useQuery({
+	const { isPending, error, data } = useQuery({
 		queryKey: ["home"],
 		queryFn: () =>
 			fetch("https://nikiv-drophunt.web.val.run").then((res) => res.json()),
@@ -11,6 +11,6 @@ export default function App() {
 
 	if (error) return "An error has occurred: " + error.message
 
-	// return <div>{JSON.stringify(data)}</div>
-	return <div></div>
+	return <div>{JSON.stringify(data)}</div>
+	// return <div></div>
 }
