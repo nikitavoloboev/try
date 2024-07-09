@@ -1,0 +1,15 @@
+{
+	"name": "api",
+	"version": "1.0.50",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "bun run --watch src/api.ts"
+	},
+	"dependencies": {
+		"@elysiajs/cors": "^1.0.2",
+		"elysia": "^1.0.25",
+		"ronin": "^4.0.19",
+		"zod": "^3.23.8"
+	},
+	"module": "src/api.ts"
+}

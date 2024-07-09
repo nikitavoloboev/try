@@ -1,0 +1,31 @@
+{
+	"name": "inlang-with-bun-workspaces",
+	"scripts": {
+		"dev": "bun web",
+		"web": "cd web && bun dev",
+		"web:build": "bun run --filter '*' build",
+		"api": "cd api && bun dev"
+	},
+	"devDependencies": {
+		"bun-types": "^1.1.18"
+	},
+	"workspaces": [
+		"web",
+		"api"
+	],
+	"prettier": {
+		"tailwindFunctions": [
+			"cn",
+			"cva"
+		],
+		"useTabs": true,
+		"semi": false,
+		"trailingComma": "none",
+		"printWidth": 120,
+		"arrowParens": "avoid"
+	},
+	"trustedDependencies": [
+		"@clerk/shared"
+	],
+	"private": true
+}
