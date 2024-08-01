@@ -2,7 +2,7 @@
 
 > Trying out code
 
-`~/try` is often the place I use to try some template or stack/code lightly and fast.
+This serves as a place I use to try some template or stack/code lightly and fast.
 
 If it's interesting enough, I'll move it to [~/src/test](https://github.com/nikitavoloboev/test) where I do more thorough testing.
 
