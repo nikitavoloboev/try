@@ -6,4 +6,6 @@ This is a place I use to try some template or stack/code lightly and fast (simil
 
 If it's useful enough, it can get moved to [~/src/test](https://github.com/nikitavoloboev/test) for more thorough testing.
 
+Things I tried in past that are archived are moved to [~/past](https://github.com/nikitavoloboev/past) where they are prefixed with `try-` and put in appropriate month.
+
 [![Discord](https://img.shields.io/badge/Discord-100000?style=flat&logo=discord&logoColor=white&labelColor=black&color=black)](https://discord.com/invite/TVafwaD23d) [![X](https://img.shields.io/badge/nikitavoloboev-100000?logo=X&color=black)](https://x.com/nikitavoloboev) [![nikiv.dev](https://img.shields.io/badge/nikiv.dev-black)](https://nikiv.dev)
