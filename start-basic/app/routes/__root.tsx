@@ -54,9 +54,7 @@ export const Route = createRootRoute({
   errorComponent: (props) => {
     return (
       <RootDocument>
-        <TonConnectUIProvider manifestUrl="https://gist.githubusercontent.com/nikitavoloboev/3a20b9deaa0c12e84f662776177aad52/raw/da68c1ae363a5b940f2f92bf997011332460e835/manifest.json">
-          <DefaultCatchBoundary {...props} />
-        </TonConnectUIProvider>
+        <DefaultCatchBoundary {...props} />
       </RootDocument>
     )
   },
@@ -67,7 +65,9 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <RootDocument>
-      <Outlet />
+      <TonConnectUIProvider manifestUrl="https://gist.githubusercontent.com/nikitavoloboev/3a20b9deaa0c12e84f662776177aad52/raw/da68c1ae363a5b940f2f92bf997011332460e835/manifest.json">
+        <Outlet />
+      </TonConnectUIProvider>
     </RootDocument>
   )
 }
