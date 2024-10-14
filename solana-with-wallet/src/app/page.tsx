@@ -21,7 +21,6 @@ export default function RouteComponent() {
               disabled={!publicKey}
               onClick={async () => {
                 if (!publicKey) return
-                const amountInUsdt = 5 // not used currently, doing it with SOL for now
                 const addresses = [
                   "6SEg4Exnk9fgaw8krTPGDBJt6gFRNnipPni2odh66bq8", // 1
                   "E57kivv4wcptYTas5aTKQb82sGvipBY5GUQZn4GPzgFT", // 2
@@ -47,7 +46,6 @@ export default function RouteComponent() {
                     })
                   )
                 }
-
                 try {
                   const res = await sendTransaction(transaction, connection)
                   console.log(res, "res")
