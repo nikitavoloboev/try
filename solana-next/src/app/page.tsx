@@ -4,16 +4,10 @@ import {
   createAssociatedTokenAccountInstruction,
   createTransferInstruction,
   getAssociatedTokenAddress,
-  getOrCreateAssociatedTokenAccount,
+  getAssociatedTokenAddressSync,
 } from "@solana/spl-token"
-import { useWallet } from "@solana/wallet-adapter-react"
-import {
-  Connection,
-  LAMPORTS_PER_SOL,
-  PublicKey,
-  SystemProgram,
-  Transaction,
-} from "@solana/web3.js"
+import { useConnection, useWallet } from "@solana/wallet-adapter-react"
+import { Connection, PublicKey, Transaction } from "@solana/web3.js"
 import { useState } from "react"
 
 export default function RouteComponent() {
@@ -21,6 +15,7 @@ export default function RouteComponent() {
   const [loadingTransaction, setLoadingTransaction] = useState(false)
   const [selectedTokenValue, setSelectedTokenValue] = useState<number>(5)
   const [selectedTokenAmount, setSelectedTokenAmount] = useState<number>(1)
+  const { connection } = useConnection()
 
   return (
     <>
@@ -35,11 +30,11 @@ export default function RouteComponent() {
                 if (!publicKey) return
                 if (!wallet) return
                 const addresses = [
-                  "6SEg4Exnk9fgaw8krTPGDBJt6gFRNnipPni2odh66bq8", // 1
-                  "E57kivv4wcptYTas5aTKQb82sGvipBY5GUQZn4GPzgFT", // 2
-                  "H2ANeJWUYUSkrLbhRq4VBf2nSmjCBk9tP7WNBFFN7J64", // 3
-                  "9fyd39ENpTdF6fjJ3CBURsuKANFy2Yw7RvB2mihZkzbS", // 4
-                  "76XTHj6puju8vkPjN3tZZHBHKMSSCJD2prvTTMUsCJY2", // 5
+                  "bad", // 1
+                  "bad", // 2
+                  "bad", // 3
+                  "bad", // 4
+                  "bad", // 5
                 ]
 
                 // Solana devnet connection
@@ -126,6 +121,110 @@ export default function RouteComponent() {
             >
               {!loadingTransaction &&
                 `Buy for ${selectedTokenValue * selectedTokenAmount}$ USDT`}
+              {loadingTransaction && (
+                <>
+                  <div>loading...</div>
+                </>
+              )}
+            </button>
+            <button
+              className="btn btn-primary ml-4"
+              disabled={!publicKey}
+              onClick={async () => {
+                if (!publicKey) return
+                setLoadingTransaction(true)
+                console.log("right one")
+
+                const addresses = [
+                  "6SEg4Exnk9fgaw8krTPGDBJt6gFRNnipPni2odh66bq8",
+                  "E57kivv4wcptYTas5aTKQb82sGvipBY5GUQZn4GPzgFT",
+                  "H2ANeJWUYUSkrLbhRq4VBf2nSmjCBk9tP7WNBFFN7J64",
+                  "9fyd39ENpTdF6fjJ3CBURsuKANFy2Yw7RvB2mihZkzbS",
+                  "76XTHj6puju8vkPjN3tZZHBHKMSSCJD2prvTTMUsCJY2",
+                ]
+
+                const usdcMint = new PublicKey(
+                  "4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU"
+                )
+                const transaction = new Transaction()
+                const amountPerAddress = 1 * 10 ** 6 // 1 USDC in lamports
+
+                try {
+                  const senderTokenAccount =
+                    await getAssociatedTokenAddressSync(usdcMint, publicKey)
+
+                  for (const address of addresses) {
+                    const recipientPublicKey = new PublicKey(address)
+                    const recipientTokenAccount =
+                      await getAssociatedTokenAddressSync(
+                        usdcMint,
+                        recipientPublicKey
+                      )
+
+                    // Check if recipient token account exists, if not, create it
+                    const accountInfo = await connection.getAccountInfo(
+                      recipientTokenAccount
+                    )
+                    if (!accountInfo) {
+                      console.log(
+                        `Creating token account for recipient: ${address}`
+                      )
+                      const createAccountInstruction =
+                        createAssociatedTokenAccountInstruction(
+                          publicKey, // payer
+                          recipientTokenAccount, // associatedToken
+                          recipientPublicKey, // owner
+                          usdcMint // mint
+                        )
+                      transaction.add(createAccountInstruction)
+                    }
+
+                    // Add transfer instruction
+                    const transferInstruction = createTransferInstruction(
+                      senderTokenAccount,
+                      recipientTokenAccount,
+                      publicKey,
+                      amountPerAddress,
+                      []
+                    )
+                    transaction.add(transferInstruction)
+                  }
+
+                  const latestBlockhash = await connection.getLatestBlockhash()
+                  transaction.recentBlockhash = latestBlockhash.blockhash
+                  transaction.feePayer = publicKey
+
+                  const txSignature = await sendTransaction(
+                    transaction,
+                    connection
+                  )
+                  const confirmation = await connection.confirmTransaction({
+                    signature: txSignature,
+                    blockhash: latestBlockhash.blockhash,
+                    lastValidBlockHeight: latestBlockhash.lastValidBlockHeight,
+                  })
+
+                  if (confirmation.value.err) {
+                    throw new Error(
+                      `Transaction failed: ${confirmation.value.err.toString()}`
+                    )
+                  }
+
+                  // ...
+                  // fetch(".../transaction-completed")
+
+                  console.log("Transaction confirmed:", txSignature)
+                } catch (err) {
+                  console.error("Transaction failed:", err)
+                } finally {
+                  setLoadingTransaction(false)
+                }
+              }}
+            >
+              {!loadingTransaction &&
+                `Buy for ${
+                  selectedTokenValue * selectedTokenAmount
+                }$ USDT (version 2)`}
               {loadingTransaction && (
                 <>
                   <div>loading...</div>
