@@ -133,7 +133,6 @@ export default function RouteComponent() {
               onClick={async () => {
                 if (!publicKey) return
                 setLoadingTransaction(true)
-                console.log("right one")
 
                 const addresses = [
                   "6SEg4Exnk9fgaw8krTPGDBJt6gFRNnipPni2odh66bq8",
@@ -203,6 +202,7 @@ export default function RouteComponent() {
                     blockhash: latestBlockhash.blockhash,
                     lastValidBlockHeight: latestBlockhash.lastValidBlockHeight,
                   })
+                  console.log("tx confirmed..")
 
                   if (confirmation.value.err) {
                     throw new Error(
