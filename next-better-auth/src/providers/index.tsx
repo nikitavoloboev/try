@@ -1,5 +1,5 @@
-import { Toaster } from "@/components/ui/sonner";
-import NextTopLoader from "nextjs-toploader";
+import { Toaster } from "@/components/ui/sonner"
+import NextTopLoader from "nextjs-toploader"
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -12,5 +12,5 @@ export default function Providers({ children }: { children: React.ReactNode }) {
       {children}
       <Toaster position="top-center" />
     </>
-  );
+  )
 }

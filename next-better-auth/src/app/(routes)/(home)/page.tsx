@@ -1,12 +1,12 @@
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
-import Link from "next/link";
-import SignOutButton from "../(auth)/components/button-signout";
-import { getMe } from "@/actions/user";
+import { buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+import Image from "next/image"
+import Link from "next/link"
+import SignOutButton from "../(auth)/components/button-signout"
+import { getMe } from "@/actions/user"
 
 export default async function Home() {
-  const me = await getMe();
+  const me = await getMe()
 
   return (
     <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
@@ -118,5 +118,5 @@ export default async function Home() {
         </a>
       </footer>
     </div>
-  );
+  )
 }

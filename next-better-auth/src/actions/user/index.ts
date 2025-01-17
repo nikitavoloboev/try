@@ -1,3 +1,3 @@
-import { getMe } from "./me";
+import { getMe } from "./me"
 
-export { getMe };
+export { getMe }

@@ -1,18 +1,18 @@
-"use client";
+"use client"
 
-import { Eye, EyeOff } from "lucide-react";
-import { cloneElement, useState, ReactElement, isValidElement } from "react";
+import { Eye, EyeOff } from "lucide-react"
+import { cloneElement, useState, ReactElement, isValidElement } from "react"
 
 interface InputPasswordContainerProps {
-  children: ReactElement<{ type?: string }>;
+  children: ReactElement<{ type?: string }>
 }
 
 export default function InputPasswordContainer({
   children,
 }: InputPasswordContainerProps) {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false)
 
-  const toggleVisibility = () => setIsVisible((prevState) => !prevState);
+  const toggleVisibility = () => setIsVisible((prevState) => !prevState)
 
   return (
     <div className="space-y-2">
@@ -36,5 +36,5 @@ export default function InputPasswordContainer({
         </button>
       </div>
     </div>
-  );
+  )
 }

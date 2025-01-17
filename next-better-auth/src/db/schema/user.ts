@@ -1,5 +1,5 @@
-import { boolean, pgTable, text, timestamp } from "drizzle-orm/pg-core";
-import { role } from "./role";
+import { boolean, pgTable, text, timestamp } from "drizzle-orm/pg-core"
+import { role } from "./role"
 
 export const user = pgTable("user", {
   id: text("id").primaryKey(),
@@ -9,6 +9,6 @@ export const user = pgTable("user", {
   role: role("role").default("member").notNull(),
   createdAt: timestamp("createdAt").notNull(),
   updatedAt: timestamp("updatedAt").notNull(),
-});
+})
 
-export type UserType = typeof user.$inferSelect;
+export type UserType = typeof user.$inferSelect

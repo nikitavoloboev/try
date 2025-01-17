@@ -1,11 +1,11 @@
-import { LucideIcon } from "lucide-react";
+import { LucideIcon } from "lucide-react"
 
 export default function InputStartIcon({
   children,
   icon: Icon,
 }: {
-  children: React.ReactNode;
-  icon: LucideIcon;
+  children: React.ReactNode
+  icon: LucideIcon
 }) {
   return (
     <div className="space-y-2">
@@ -16,5 +16,5 @@ export default function InputStartIcon({
         </div>
       </div>
     </div>
-  );
+  )
 }

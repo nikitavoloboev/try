@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "zod"
 
 const disallowedUsernamePatterns = [
   "admin",
@@ -8,7 +8,7 @@ const disallowedUsernamePatterns = [
   "jabirdev",
   "cakfan",
   "withcakfan",
-];
+]
 
 export const SignUpSchema = z
   .object({
@@ -25,10 +25,10 @@ export const SignUpSchema = z
         (username) => {
           for (const pattern of disallowedUsernamePatterns) {
             if (username.toLowerCase().includes(pattern)) {
-              return false;
+              return false
             }
           }
-          return true;
+          return true
         },
         { message: "Username contains disallowed words" },
       ),
@@ -42,6 +42,6 @@ export const SignUpSchema = z
   .refine((data) => data.password === data.confirmPassword, {
     message: "Passwords don't match",
     path: ["confirmPassword"],
-  });
+  })
 
-export type SignUpValues = z.infer<typeof SignUpSchema>;
+export type SignUpValues = z.infer<typeof SignUpSchema>

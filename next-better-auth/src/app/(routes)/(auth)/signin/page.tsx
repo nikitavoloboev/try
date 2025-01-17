@@ -1,10 +1,10 @@
-import { type Metadata } from "next";
-import SignInForm from "./form";
-import Link from "next/link";
+import { type Metadata } from "next"
+import SignInForm from "./form"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Sign In",
-};
+}
 
 export default function SignInPage() {
   return (
@@ -21,5 +21,5 @@ export default function SignInPage() {
         </div>
       </div>
     </div>
-  );
+  )
 }

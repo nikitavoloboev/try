@@ -1,30 +1,28 @@
-"use client";
+"use client"
 
+import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormLabel,
   FormField,
   FormItem,
   FormMessage,
-} from "@/components/ui/form";
-import { useTransition } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { signUp } from "@/lib/auth-client";
-import { redirect } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { toast } from "sonner";
-import { SignUpSchema, SignUpValues } from "./validate";
-import InputStartIcon from "../components/input-start-icon";
-import InputPasswordContainer from "../components/input-password";
-import { cn } from "@/lib/utils";
-import { AtSign, MailIcon, UserIcon } from "lucide-react";
-import { Label } from "@/components/ui/label";
+} from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+import { signUp } from "@/lib/auth-client"
+import { cn } from "@/lib/utils"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { MailIcon } from "lucide-react"
+import { redirect } from "next/navigation"
+import { useTransition } from "react"
+import { useForm } from "react-hook-form"
+import { toast } from "sonner"
+import InputPasswordContainer from "../components/input-password"
+import InputStartIcon from "../components/input-start-icon"
+import { SignUpSchema, SignUpValues } from "./validate"
 
 export default function SignUpForm() {
-  const [isPending, startTransition] = useTransition();
+  const [isPending, startTransition] = useTransition()
   const form = useForm<SignUpValues>({
     resolver: zodResolver(SignUpSchema),
     defaultValues: {
@@ -32,32 +30,32 @@ export default function SignUpForm() {
       password: "",
       confirmPassword: "",
     },
-  });
+  })
 
   function onSubmit(data: SignUpValues) {
     startTransition(async () => {
-      console.log("submit data:", data);
-      const response = await signUp.email(data);
+      console.log("submit data:", data)
+      const response = await signUp.email(data)
 
       if (response.error) {
-        console.log("SIGN_UP:", response.error.status);
-        toast.error(response.error.message);
+        console.log("SIGN_UP:", response.error.status)
+        toast.error(response.error.message)
       } else {
-        redirect("/");
+        redirect("/")
       }
-    });
+    })
   }
 
   const getInputClassName = (fieldName: keyof SignUpValues) =>
     cn(
       form.formState.errors[fieldName] &&
         "border-destructive/80 text-destructive focus-visible:border-destructive/80 focus-visible:ring-destructive/20",
-    );
+    )
 
   const genderItems = [
     { id: "radio-male", value: "male", label: "Male" },
     { id: "radio-female", value: "female", label: "Female" },
-  ];
+  ]
 
   return (
     <Form {...form}>
@@ -130,5 +128,5 @@ export default function SignUpForm() {
         </Button>
       </form>
     </Form>
-  );
+  )
 }

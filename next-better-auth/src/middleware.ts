@@ -1,13 +1,13 @@
-import { NextResponse, type NextRequest } from "next/server";
-import type { Session } from "better-auth/types";
-import { betterFetch } from "@better-fetch/fetch";
+import { NextResponse, type NextRequest } from "next/server"
+import type { Session } from "better-auth/types"
+import { betterFetch } from "@better-fetch/fetch"
 
 import {
   apiAuthPrefix,
   authRoutes,
   DEFAULT_LOGIN_REDIRECT,
   publicRoutes,
-} from "./routes";
+} from "./routes"
 
 export async function middleware(request: NextRequest) {
   const { data: session } = await betterFetch<Session>(
@@ -19,34 +19,32 @@ export async function middleware(request: NextRequest) {
         cookie: request.headers.get("cookie") || "",
       },
     },
-  );
+  )
 
-  const isApiAuth = request.nextUrl.pathname.startsWith(apiAuthPrefix);
+  const isApiAuth = request.nextUrl.pathname.startsWith(apiAuthPrefix)
 
-  const isPublicRoute = publicRoutes.includes(request.nextUrl.pathname);
+  const isPublicRoute = publicRoutes.includes(request.nextUrl.pathname)
 
   const isAuthRoute = () => {
-    return authRoutes.some((path) => request.nextUrl.pathname.startsWith(path));
-  };
+    return authRoutes.some((path) => request.nextUrl.pathname.startsWith(path))
+  }
 
   if (isApiAuth) {
-    return NextResponse.next();
+    return NextResponse.next()
   }
 
   if (isAuthRoute()) {
     if (session) {
-      return NextResponse.redirect(
-        new URL(DEFAULT_LOGIN_REDIRECT, request.url),
-      );
+      return NextResponse.redirect(new URL(DEFAULT_LOGIN_REDIRECT, request.url))
     }
-    return NextResponse.next();
+    return NextResponse.next()
   }
 
   if (!session && !isPublicRoute) {
-    return NextResponse.redirect(new URL("/login", request.url));
+    return NextResponse.redirect(new URL("/login", request.url))
   }
 
-  return NextResponse.next();
+  return NextResponse.next()
 }
 
 export const config = {
@@ -60,4 +58,4 @@ export const config = {
      */
     "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
   ],
-};
+}

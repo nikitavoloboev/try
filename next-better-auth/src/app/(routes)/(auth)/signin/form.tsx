@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import {
   Form,
@@ -7,49 +7,49 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { useTransition } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { signIn } from "@/lib/auth-client";
-import { redirect } from "next/navigation";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { toast } from "sonner";
-import { SignInSchema, SignInValues } from "./validate";
-import InputStartIcon from "../components/input-start-icon";
-import InputPasswordContainer from "../components/input-password";
-import { cn } from "@/lib/utils";
-import { AtSign, MailIcon } from "lucide-react";
+} from "@/components/ui/form"
+import { useTransition } from "react"
+import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { signIn } from "@/lib/auth-client"
+import { redirect } from "next/navigation"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { toast } from "sonner"
+import { SignInSchema, SignInValues } from "./validate"
+import InputStartIcon from "../components/input-start-icon"
+import InputPasswordContainer from "../components/input-password"
+import { cn } from "@/lib/utils"
+import { AtSign, MailIcon } from "lucide-react"
 
 export default function SignInForm() {
-  const [isPending, startTransition] = useTransition();
+  const [isPending, startTransition] = useTransition()
   const form = useForm<SignInValues>({
     resolver: zodResolver(SignInSchema),
     defaultValues: {
       email: "",
       password: "",
     },
-  });
+  })
 
   function onSubmit(data: SignInValues) {
     startTransition(async () => {
-      const response = await signIn.email(data);
+      const response = await signIn.email(data)
 
       if (response.error) {
-        console.log("SIGN_IN:", response.error.message);
-        toast.error(response.error.message);
+        console.log("SIGN_IN:", response.error.message)
+        toast.error(response.error.message)
       } else {
-        redirect("/dashboard");
+        redirect("/dashboard")
       }
-    });
+    })
   }
 
   const getInputClassName = (fieldName: keyof SignInValues) =>
     cn(
       form.formState.errors[fieldName] &&
         "border-destructive/80 text-destructive focus-visible:border-destructive/80 focus-visible:ring-destructive/20",
-    );
+    )
 
   return (
     <Form {...form}>
@@ -102,5 +102,5 @@ export default function SignInForm() {
         </Button>
       </form>
     </Form>
-  );
+  )
 }
