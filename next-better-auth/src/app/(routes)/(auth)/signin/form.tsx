@@ -20,21 +20,21 @@ import { SignInSchema, SignInValues } from "./validate";
 import InputStartIcon from "../components/input-start-icon";
 import InputPasswordContainer from "../components/input-password";
 import { cn } from "@/lib/utils";
-import { AtSign } from "lucide-react";
+import { AtSign, MailIcon } from "lucide-react";
 
 export default function SignInForm() {
   const [isPending, startTransition] = useTransition();
   const form = useForm<SignInValues>({
     resolver: zodResolver(SignInSchema),
     defaultValues: {
-      username: "",
+      email: "",
       password: "",
     },
   });
 
   function onSubmit(data: SignInValues) {
     startTransition(async () => {
-      const response = await signIn.username(data);
+      const response = await signIn.email(data);
 
       if (response.error) {
         console.log("SIGN_IN:", response.error.message);
@@ -59,14 +59,14 @@ export default function SignInForm() {
       >
         <FormField
           control={form.control}
-          name="username"
+          name="email"
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <InputStartIcon icon={AtSign}>
+                <InputStartIcon icon={MailIcon}>
                   <Input
-                    placeholder="Username"
-                    className={cn("peer ps-9", getInputClassName("username"))}
+                    placeholder="Email"
+                    className={cn("peer ps-9", getInputClassName("email"))}
                     disabled={isPending}
                     {...field}
                   />

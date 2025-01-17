@@ -28,9 +28,7 @@ export default function SignUpForm() {
   const form = useForm<SignUpValues>({
     resolver: zodResolver(SignUpSchema),
     defaultValues: {
-      name: "",
       email: "",
-      username: "",
       password: "",
       confirmPassword: "",
     },
@@ -69,25 +67,6 @@ export default function SignUpForm() {
       >
         <FormField
           control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              <FormControl>
-                <InputStartIcon icon={UserIcon}>
-                  <Input
-                    placeholder="Name"
-                    className={cn("peer ps-9", getInputClassName("name"))}
-                    disabled={isPending}
-                    {...field}
-                  />
-                </InputStartIcon>
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
           name="email"
           render={({ field }) => (
             <FormItem>
@@ -96,26 +75,6 @@ export default function SignUpForm() {
                   <Input
                     placeholder="Email"
                     className={cn("peer ps-9", getInputClassName("email"))}
-                    disabled={isPending}
-                    {...field}
-                  />
-                </InputStartIcon>
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="username"
-          render={({ field }) => (
-            <FormItem>
-              <FormControl>
-                <InputStartIcon icon={AtSign}>
-                  <Input
-                    placeholder="Username"
-                    className={cn("peer ps-9", getInputClassName("username"))}
                     disabled={isPending}
                     {...field}
                   />
