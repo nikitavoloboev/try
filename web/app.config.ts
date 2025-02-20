@@ -1,6 +1,7 @@
 import { defineConfig } from "@tanstack/start/config"
 import tsConfigPaths from "vite-tsconfig-paths"
 import tailwindcss from "@tailwindcss/vite"
+import { nodePolyfills } from "vite-plugin-node-polyfills"
 
 export default defineConfig({
   vite: {
@@ -13,6 +14,19 @@ export default defineConfig({
   },
   server: {
     preset: "vercel",
+  },
+  routers: {
+    client: {
+      vite: {
+        plugins: [
+          nodePolyfills({
+            globals: {
+              Buffer: true,
+            },
+          }),
+        ],
+      },
+    },
   },
   tsr: {
     customScaffolding: {

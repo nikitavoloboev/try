@@ -17,11 +17,16 @@
     "@tanstack/react-router-with-query": "^1.106.0",
     "@tanstack/router-devtools": "^1.106.0",
     "@tanstack/start": "^1.107.0",
+    "@ton/core": "^0.60.1",
+    "@tonconnect/ui-react": "^2.0.11",
+    "framer-motion": "^12.4.7",
+    "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "redaxios": "^0.5.1",
     "tailwind-merge": "^3.0.1",
-    "vinxi": "0.5.3"
+    "vinxi": "0.5.3",
+    "vite-plugin-node-polyfills": "^0.23.0"
   },
   "devDependencies": {
     "@types/node": "^22.13.4",
