@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 import { LogOutIcon } from "lucide-react"
 
 // example of route trying to use ton/core functionality that relies on Buffer working on client side
-// TODO: Buffer is breaking here when trying to use TON
+// TODO: Buffer is breaking here when trying to use TON https://discord.com/channels/719702312431386674/1342156419264151602
 function RouteComponent() {
   const wallet = useTonWallet()
   const { open } = useTonConnectModal()
