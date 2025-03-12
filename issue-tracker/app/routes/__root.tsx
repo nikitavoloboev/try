@@ -5,7 +5,6 @@ import {
   createRootRouteWithContext,
   Scripts,
 } from "@tanstack/react-router"
-import * as React from "react"
 import { DefaultCatchBoundary } from "~/components/DefaultCatchBoundary"
 import { NotFound } from "~/components/NotFound"
 import { seo } from "~/lib/seo"
@@ -24,8 +23,8 @@ export const Route = createRootRouteWithContext<{
         content: "width=device-width, initial-scale=1",
       },
       ...seo({
-        title: "",
-        description: ``,
+        title: "Issue Tracker",
+        description: "Issue Tracker",
       }),
     ],
     links: [
@@ -72,7 +71,7 @@ function RootComponent() {
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html>
+    <html lang="en">
       <head>
         <HeadContent />
       </head>
