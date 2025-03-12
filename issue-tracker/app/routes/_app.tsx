@@ -26,7 +26,7 @@ function LayoutComponent() {
         AccountSchema={JazzAccount}
       >
         <PasskeyAuthBasicUI appName="Issue Tracker">
-          <body className="min-h-screen flex flex-col">
+          <main className="min-h-screen flex flex-col">
             <SidebarProvider>
               <Header />
               <div className="flex flex-col min-h-screen w-full pt-14">
@@ -36,7 +36,7 @@ function LayoutComponent() {
                 <Footer />
               </div>
             </SidebarProvider>
-          </body>
+          </main>
           {/* TODO: does not hide it for some reason */}
           {/* <div className="hidden">
             <JazzInspector />
