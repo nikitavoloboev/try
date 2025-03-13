@@ -1,37 +1,37 @@
-import type { QueryClient } from "@tanstack/react-query";
+import type { QueryClient } from "@tanstack/react-query"
 import {
   createRootRouteWithContext,
   HeadContent,
   Outlet,
   ScriptOnce,
   Scripts,
-} from "@tanstack/react-router";
-import { createServerFn } from "@tanstack/react-start";
-import { getWebRequest } from "@tanstack/react-start/server";
+} from "@tanstack/react-router"
+import { createServerFn } from "@tanstack/react-start"
+import { getWebRequest } from "@tanstack/react-start/server"
 
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
+import { TanStackRouterDevtools } from "@tanstack/react-router-devtools"
 
-import { auth } from "~/lib/server/auth";
-import appCss from "~/lib/styles/app.css?url";
+import { auth } from "~/lib/server/auth"
+import appCss from "~/lib/styles/app.css?url"
 
 const getUser = createServerFn({ method: "GET" }).handler(async () => {
-  const { headers } = getWebRequest()!;
-  const session = await auth.api.getSession({ headers });
+  const { headers } = getWebRequest()!
+  const session = await auth.api.getSession({ headers })
 
-  return session?.user || null;
-});
+  return session?.user || null
+})
 
 export const Route = createRootRouteWithContext<{
-  queryClient: QueryClient;
-  user: Awaited<ReturnType<typeof getUser>>;
+  queryClient: QueryClient
+  user: Awaited<ReturnType<typeof getUser>>
 }>()({
   beforeLoad: async ({ context }) => {
     const user = await context.queryClient.fetchQuery({
       queryKey: ["user"],
       queryFn: ({ signal }) => getUser({ signal }),
-    }); // we're using react-query for caching, see router.tsx
-    return { user };
+    }) // we're using react-query for caching, see router.tsx
+    return { user }
   },
   head: () => ({
     meta: [
@@ -49,14 +49,14 @@ export const Route = createRootRouteWithContext<{
     links: [{ rel: "stylesheet", href: appCss }],
   }),
   component: RootComponent,
-});
+})
 
 function RootComponent() {
   return (
     <RootDocument>
       <Outlet />
     </RootDocument>
-  );
+  )
 }
 
 function RootDocument({ children }: { readonly children: React.ReactNode }) {
@@ -82,5 +82,5 @@ function RootDocument({ children }: { readonly children: React.ReactNode }) {
         <Scripts />
       </body>
     </html>
-  );
+  )
 }

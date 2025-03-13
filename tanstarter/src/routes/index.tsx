@@ -1,19 +1,19 @@
-import { Link, createFileRoute, useRouter } from "@tanstack/react-router";
-import authClient from "~/lib/auth-client";
-import ThemeToggle from "~/lib/components/ThemeToggle";
-import { Button } from "~/lib/components/ui/button";
+import { Link, createFileRoute, useRouter } from "@tanstack/react-router"
+import authClient from "~/lib/auth-client"
+import ThemeToggle from "~/lib/components/ThemeToggle"
+import { Button } from "~/lib/components/ui/button"
 
 export const Route = createFileRoute("/")({
   component: Home,
   loader: ({ context }) => {
-    return { user: context.user };
+    return { user: context.user }
   },
-});
+})
 
 function Home() {
-  const { queryClient } = Route.useRouteContext();
-  const { user } = Route.useLoaderData();
-  const router = useRouter();
+  const { queryClient } = Route.useRouteContext()
+  const { user } = Route.useLoaderData()
+  const router = useRouter()
 
   return (
     <div className="flex flex-col gap-4 p-6">
@@ -38,9 +38,9 @@ function Home() {
 
           <Button
             onClick={async () => {
-              await authClient.signOut();
-              await queryClient.invalidateQueries({ queryKey: ["user"] });
-              await router.invalidate();
+              await authClient.signOut()
+              await queryClient.invalidateQueries({ queryKey: ["user"] })
+              await router.invalidate()
             }}
             type="button"
             className="w-fit"
@@ -70,5 +70,5 @@ function Home() {
         dotnize/tanstarter
       </a>
     </div>
-  );
+  )
 }

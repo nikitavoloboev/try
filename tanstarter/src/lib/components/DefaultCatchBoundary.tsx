@@ -5,17 +5,17 @@ import {
   rootRouteId,
   useMatch,
   useRouter,
-} from "@tanstack/react-router";
-import { Button } from "./ui/button";
+} from "@tanstack/react-router"
+import { Button } from "./ui/button"
 
 export function DefaultCatchBoundary({ error }: Readonly<ErrorComponentProps>) {
-  const router = useRouter();
+  const router = useRouter()
   const isRoot = useMatch({
     strict: false,
     select: (state) => state.id === rootRouteId,
-  });
+  })
 
-  console.error(error);
+  console.error(error)
 
   return (
     <div className="flex min-w-0 flex-1 flex-col items-center justify-center gap-6 p-4">
@@ -24,7 +24,7 @@ export function DefaultCatchBoundary({ error }: Readonly<ErrorComponentProps>) {
         <Button
           type="button"
           onClick={() => {
-            router.invalidate();
+            router.invalidate()
           }}
         >
           Try Again
@@ -38,8 +38,8 @@ export function DefaultCatchBoundary({ error }: Readonly<ErrorComponentProps>) {
             <Link
               to="/"
               onClick={(e) => {
-                e.preventDefault();
-                window.history.back();
+                e.preventDefault()
+                window.history.back()
               }}
             >
               Go Back
@@ -48,5 +48,5 @@ export function DefaultCatchBoundary({ error }: Readonly<ErrorComponentProps>) {
         )}
       </div>
     </div>
-  );
+  )
 }

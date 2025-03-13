@@ -1,7 +1,7 @@
-import { betterAuth } from "better-auth";
-import { drizzleAdapter } from "better-auth/adapters/drizzle";
+import { betterAuth } from "better-auth"
+import { drizzleAdapter } from "better-auth/adapters/drizzle"
 
-import { db } from "./db";
+import { db } from "./db"
 
 export const auth = betterAuth({
   baseURL: process.env.VITE_BASE_URL,
@@ -37,4 +37,4 @@ export const auth = betterAuth({
   // emailAndPassword: {
   //   enabled: true,
   // },
-});
+})

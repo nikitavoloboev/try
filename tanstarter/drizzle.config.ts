@@ -1,4 +1,4 @@
-import type { Config } from "drizzle-kit";
+import type { Config } from "drizzle-kit"
 
 export default {
   out: "./.drizzle",
@@ -10,4 +10,4 @@ export default {
   dbCredentials: {
     url: process.env.DATABASE_URL as string,
   },
-} satisfies Config;
+} satisfies Config

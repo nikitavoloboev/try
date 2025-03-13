@@ -1,10 +1,10 @@
-import { createFileRoute, redirect } from "@tanstack/react-router";
-import { type ComponentProps } from "react";
-import authClient from "~/lib/auth-client";
-import { Button } from "~/lib/components/ui/button";
-import { cn } from "~/lib/utils";
+import { createFileRoute, redirect } from "@tanstack/react-router"
+import { type ComponentProps } from "react"
+import authClient from "~/lib/auth-client"
+import { Button } from "~/lib/components/ui/button"
+import { cn } from "~/lib/utils"
 
-const REDIRECT_URL = "/dashboard";
+const REDIRECT_URL = "/dashboard"
 
 export const Route = createFileRoute("/signin")({
   component: AuthPage,
@@ -12,10 +12,10 @@ export const Route = createFileRoute("/signin")({
     if (context.user) {
       throw redirect({
         to: REDIRECT_URL,
-      });
+      })
     }
   },
-});
+})
 
 function AuthPage() {
   return (
@@ -41,12 +41,12 @@ function AuthPage() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 interface SignInButtonProps extends ComponentProps<typeof Button> {
-  provider: "discord" | "google" | "github";
-  label: string;
+  provider: "discord" | "google" | "github"
+  label: string
 }
 
 function SignInButton({ provider, label, className, ...props }: SignInButtonProps) {
@@ -66,5 +66,5 @@ function SignInButton({ provider, label, className, ...props }: SignInButtonProp
     >
       Sign in with {label}
     </Button>
-  );
+  )
 }

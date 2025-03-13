@@ -1,8 +1,8 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router"
 
 export const Route = createFileRoute("/dashboard/")({
   component: DashboardIndex,
-});
+})
 
 function DashboardIndex() {
   return (
@@ -12,5 +12,5 @@ function DashboardIndex() {
         routes/dashboard/index.tsx
       </pre>
     </div>
-  );
+  )
 }

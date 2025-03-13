@@ -1,5 +1,5 @@
-import { MoonIcon, SunIcon } from "lucide-react";
-import { Button } from "./ui/button";
+import { MoonIcon, SunIcon } from "lucide-react"
+import { Button } from "./ui/button"
 
 export default function ThemeToggle() {
   function toggleTheme() {
@@ -8,11 +8,11 @@ export default function ThemeToggle() {
       (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
+      document.documentElement.classList.remove("dark")
+      localStorage.theme = "light"
     } else {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
+      document.documentElement.classList.add("dark")
+      localStorage.theme = "dark"
     }
   }
 
@@ -22,5 +22,5 @@ export default function ThemeToggle() {
       <MoonIcon className="absolute size-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
       <span className="sr-only">Toggle theme</span>
     </Button>
-  );
+  )
 }

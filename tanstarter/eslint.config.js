@@ -1,12 +1,12 @@
-import react from "@eslint-react/eslint-plugin";
-import js from "@eslint/js";
-import pluginQuery from "@tanstack/eslint-plugin-query";
-import pluginRouter from "@tanstack/eslint-plugin-router";
-import eslintConfigPrettier from "eslint-config-prettier";
-import reactCompiler from "eslint-plugin-react-compiler";
-import reactHooks from "eslint-plugin-react-hooks";
-import globals from "globals";
-import tseslint from "typescript-eslint";
+import react from "@eslint-react/eslint-plugin"
+import js from "@eslint/js"
+import pluginQuery from "@tanstack/eslint-plugin-query"
+import pluginRouter from "@tanstack/eslint-plugin-router"
+import eslintConfigPrettier from "eslint-config-prettier"
+import reactCompiler from "eslint-plugin-react-compiler"
+import reactHooks from "eslint-plugin-react-hooks"
+import globals from "globals"
+import tseslint from "typescript-eslint"
 
 // TODO: clean up for better composability
 export default tseslint.config(
@@ -57,4 +57,4 @@ export default tseslint.config(
       // "@eslint-react/no-context-provider": "off",
     },
   },
-);
+)
