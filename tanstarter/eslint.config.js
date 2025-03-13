@@ -11,7 +11,15 @@ import tseslint from "typescript-eslint"
 // TODO: clean up for better composability
 export default tseslint.config(
   {
-    ignores: ["dist", ".vinxi", ".wrangler", ".vercel", ".netlify", ".output", "build/"],
+    ignores: [
+      "dist",
+      ".vinxi",
+      ".wrangler",
+      ".vercel",
+      ".netlify",
+      ".output",
+      "build/",
+    ],
   },
   {
     files: ["**/*.{ts,tsx}"],
