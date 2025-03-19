@@ -1,0 +1,24 @@
+# core
+.DS_Store
+.env
+.env*.local
+.env.production
+output
+dist
+target
+.idea
+.cache
+.output
+node_modules
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.vercel
+*.bike
+*.db
+.repo_ignore
+x/
+x-*
+past-*
+past/
+*.log
